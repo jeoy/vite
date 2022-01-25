@@ -23,7 +23,7 @@ export function clientInjectionsPlugin(config: ResolvedConfig): Plugin {
         const protocol = options.protocol || null
         const timeout = options.timeout || 30000
         const overlay = options.overlay !== false
-        let port: number | string | undefined
+        let port: number | string | false | undefined
         if (isObject(config.server.hmr)) {
           port = config.server.hmr.clientPort || config.server.hmr.port
         }
