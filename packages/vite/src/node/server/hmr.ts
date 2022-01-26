@@ -19,6 +19,7 @@ export interface HmrOptions {
   protocol?: string
   host?: string
   port?: number
+  socketHost?: string
   clientPort?: number
   path?: string
   timeout?: number
