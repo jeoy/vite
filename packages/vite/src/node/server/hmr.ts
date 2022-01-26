@@ -18,7 +18,8 @@ const normalizedClientDir = normalizePath(CLIENT_DIR)
 export interface HmrOptions {
   protocol?: string
   host?: string
-  port?: number | false
+  port?: number
+  disablePort?: boolean
   clientPort?: number
   path?: string
   timeout?: number
